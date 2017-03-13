@@ -1,0 +1,181 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    font-family: "微软雅黑", sans-serif;
+    font-size: 15px;
+    background-color: #D3D3D3;
+}
+/*大盒子*/
+#boss{
+    padding: 20px;
+}
+
+/*所有div的设置*/
+.backColor{
+    background-color: white;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    clear: both;
+    margin-right: 500px;
+
+
+}
+
+/*字体链接设置*/
+a:link,a:visited, a:hover, a:active{
+    color: brown;
+    font-weight: bold;
+}
+.color_G{
+    color: gray;
+}
+.indent{
+    text-indent: 2.5em;
+}
+
+/*左边区域*/
+.LeftDIV{
+    float: left;
+}
+
+
+
+/*导航栏*/
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #222222;
+}
+nav > img{
+    width: 130px;
+    height: 56px;
+}
+nav > div{
+    float: right;
+    margin-right: 10px;
+    line-height: 49px;
+
+}
+nav > div > ul >li{
+    float: left;
+    font-size:12px;
+    padding: 0 2px 0 ;
+    margin-left: 5px;
+    list-style-type: none;
+}
+
+.color_B{
+    color: white;
+}
+
+
+/*图片区域*/
+.divHeight{
+    height: 350px;
+    overflow: hidden;
+}
+.backColor> dl{
+    width: 120px;
+    float: left;
+    background-color: brown;
+    margin: 20px 25px 0 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.backColor > dl > dd >img{
+    width: 100px;
+    height: 90px;
+    margin-top: 5px;
+}
+
+/*表格区域*/
+.backColor > ol{
+    margin-left: 40px;
+}
+.backColor > table{
+    width: 100%;
+    height:170px;
+    border: solid #D3D3D3;
+    border-width:0 0 0 1px;
+}
+td{
+    border: solid #D3D3D3;
+    border-width: 0 1px 1px 0;
+}
+th{
+    background-color: #222222;
+    color: white;
+}
+.td_color{
+    background-color: #cccccc;
+    font-weight: bold;
+}
+
+/*侧边栏*/
+.FloatRight{
+    float: left;
+    width: 440px;
+    margin-left: -483px;
+    background-color: white;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+}
+.sidebarTitle{
+    height:45px;
+    line-height: 40px;
+    border-left: 4px solid #D3D3D3;
+    padding-left: 9px;
+}
+.text_right{
+    width: 120px;
+    margin-left: 8px;
+    display: inline-block;
+    text-align: right;
+}
+.p_margin{
+    margin-bottom: 10px;
+}
+.pMarginR{
+    margin-top: 7px;
+    color: gray;
+}
+.TEXT_right{
+    margin-left: 400px;
+    color: gray;
+    margin-top: 5px;
+}
+.span_margin{
+    margin-left: 130px;
+    margin-top: -20px;
+}
+button{
+    width: 100%;
+    background-color: #b3d4fc;
+    border-radius: 8px;
+    color:  green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*尾部区域*/
+.footer{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: -20px;
+    clear: both;
+}

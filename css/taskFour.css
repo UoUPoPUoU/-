@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.grayBoss {
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -100px;
+    background-color: gray;
+
+}
+
+.grayBoss  > div{
+    width: 0;
+    border-radius: 100px;
+    border-width: 55px;
+    border-style: solid;
+}
+
+.SectorOne {
+    /*float: left;*/
+    margin-left: -55px;
+    margin-top: -55px;
+    transform: rotate(-45deg);
+    border-color: transparent transparent pink transparent;
+
+
+}
+.SectorTwo{
+    float: right;
+    margin-right: -55px;
+    margin-top: 92px;
+    transform: rotate(45deg);
+    border-color: transparent transparent transparent pink;
+}
+
+
+
+
+
+
+

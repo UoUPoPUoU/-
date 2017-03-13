@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+}
+
+body{
+    font-family: "微软雅黑", sans-serif;
+    font-size: 17px;
+    padding: 20px;
+}
+
+#BigBox{
+    height: 390px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+div{
+    padding: 20px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.introduce{
+    float: left;
+
+
+}
+.introduceSon{
+    margin: 0 120px 0 200px;
+}
+
+.Left{
+    float: left;
+    margin-left: -100%;
+    background-color: lightsteelblue;
+}
+.moveTxt{
+    margin: -5px 0 0 20px;
+    float: right;
+    font-weight: bold;
+}
+
+.Right{
+    float: left;
+    margin-left: -120px;
+    background-color: brown;
+}
