@@ -1,0 +1,161 @@
+
+/*头部*/
+body{
+    padding: 0 2.5em;
+    background-color: #323232;
+    /**/
+}
+.t1-bg {
+    background-color: #e4e4e4;
+    padding-bottom: 0.3125em;
+}
+header {
+    display: flex;
+    width: 99.8%;
+    justify-content: space-between;
+    background-color: #323232;
+    height: 4.6875em;
+    margin-top: -1px;
+}
+
+header img{
+    width: 11.75em;
+    height: 4.75em;
+    margin-left: 2.5em;
+}
+header ul{
+    display: flex;
+
+}
+header li {
+    margin-right: 1.25em;
+    list-style-type: none;
+    line-height: 4.6875em;
+}
+header ul a {
+    color: #fff;
+    font-size: 0.875em;
+}
+header a:hover {
+    color: #898987;
+}
+/*第一节*/
+.t1-container{
+    margin: 1.5625em;
+    padding: 1.5625em;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 3px #bbbbbb;
+}
+.t1-container h2 {
+    margin-bottom: 1.25em;
+}
+.t1-container h3,
+.t1-writer{
+    margin-bottom: 0.9375em;
+    color: #777873;
+}
+.t1-writer{
+    font-size: 0.875em;
+}
+.t1-text{
+    text-indent: 2em;
+    margin-bottom: 0.9375em;
+}
+/*第二节*/
+.t1-case {
+    margin-top: 0.9375em;
+    list-style-type: none;
+}
+.t1-case li{
+    margin-bottom: 0.625em;
+}
+/*第三节 图片*/
+.t1-img dl{
+    width: 14.375em;
+    text-align: center;
+    border: 2px solid #bbb;
+    margin-bottom: 1.25em;
+}
+.t1-img dt {
+    padding: 0.625em 0;
+}
+/*第四节 表格*/
+.t1-table li,
+.t1-table p {
+    margin-bottom: 0.625em;
+    font-weight: bold;
+}
+.t1-table table {
+    width: 100%;
+    text-align: left;
+    border:solid #bbb;
+    border-width:1px 0 0 1px;
+}
+
+.t1-table th {
+    color: #fff;
+    background-color: #000;
+}
+.t1-table th,
+.t1-table td {
+    padding: 0.3125em 0.625em;
+}
+.t1-table td {
+    border: solid #bbb;
+    border-width:0 1px 1px 0;
+}
+.t1-table tfoot {
+    font-weight: bold;
+    background-color: #bbb;
+}
+/*侧边栏*/
+.t1-sidebar h2 {
+    border-left: 0.1875em solid #bbb;
+    padding: 0.625em;
+}
+
+
+.t1-input-text {
+    margin-bottom: 1em;
+}
+.t1-input-text label,
+.t1-side-left span {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.t1-input-text input {
+    padding: 0.3125em 0.125em;
+}
+.t1-form p {
+    display: inline-block;
+    font-size: 0.9375em;
+    margin-top: .8em;
+    margin-bottom: 1em;
+    color: #777873;
+}
+.t1-side-left {
+    margin-bottom: 1em;
+
+}
+
+.t1-btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: cadetblue;
+}
+/*底部*/
+.t1-footer {
+    width: 99.8%;
+    text-align: center;
+    color: #fff;
+    padding: 0.625em 0 1.875em;
+    background-color: #323232;
+}
