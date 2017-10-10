@@ -1,0 +1,370 @@
+h1, h2, h3, h4, h5, h6, p, a, span, div, nav, footer, header, button, img, body, input, html, ul, li, label, select, option, dl, dt, dd {
+    margin: 0 auto;
+}
+
+.width {
+    width: 1280px;
+}
+
+/*头部开始*/
+header {
+    position: relative;
+    background-color: #fff;
+    padding: 13px 57px;
+}
+
+.logo {
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 21px;
+    color: #393a3a;
+    font-family: "黑体", sans-serif;
+}
+
+.logo > img {
+    margin-right: 10px;
+}
+
+.nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav li {
+    float: left;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.nav a,
+.login {
+    font-size: 14px;
+}
+
+.nav a {
+    color: #83868d;
+}
+
+.nav a:hover {
+    color: #e74f4d;
+}
+
+.active {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #e74f4d;
+
+}
+
+.login {
+    display: inline-block;
+    margin-left: 20px;
+    color: #e74f4d;
+}
+
+/*广告图开始*/
+.banner {
+    height: 854px;
+    background: url("../images/t7-banner.png") no-repeat;
+    background-size: cover;
+
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+
+}
+
+.banner .cover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.banner {
+    color: #fff;
+}
+
+.banner > h1 {
+    font-size: 55px;
+}
+
+.banner p {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.banner p,
+.b-btn {
+    margin-left: 116px;
+}
+
+.banner .banner-tit {
+    font-size: 55px;
+    line-height: 30px;
+    margin-top: 230px;
+    margin-bottom: 30px;
+}
+
+.b-btn {
+    display: inline-block;
+    width: 331px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #e74f4d;
+    margin-top: 55px;
+}
+
+/*小介绍开始*/
+.into-box {
+    display: flex;
+    margin-bottom: 66px;
+}
+
+.into-box dl {
+    text-align: center;
+}
+
+.into-box dt {
+    width: 42px;
+    height: 42px;
+    margin: 45px auto;
+}
+
+.into-box dd {
+    height: 50px;
+    padding: 0 80px;
+    font-size: 14px;
+    color: #8d8d8d;
+    border-right: 2px solid #989899;
+}
+
+.into-box dl:last-child > dd {
+    border-right: none;
+}
+
+/*搜索区开始*/
+.what-tit {
+    padding-top: 1px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #edecec;
+}
+
+.what-tit > img {
+    width: 92px;
+    height: 92px;
+    margin-top: 87px;
+}
+
+.what-tit > h1 {
+    font-size: 54px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #a1a1a1;
+}
+
+.searchB {
+    height: 340px;
+    padding-top: 1px;
+    background: url("../images/t7-8.png") no-repeat;
+    background-size: cover;
+}
+
+.searchB .cover {
+    background-color: rgba(170, 53, 51, .2);
+}
+
+.searchB-top {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.searchB-top p:nth-of-type(1) {
+    font-size: 21px;
+    line-height: 42px;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+.sub {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+}
+
+.searchB-top p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 31.27px;
+}
+
+/*搜索框*/
+.search {
+    margin-left: 50px;
+    display: flex;
+    align-items: self-end;
+}
+
+.list,
+.searchBtn {
+    width: 236px;
+}
+
+.list {
+    box-shadow: 0 0 5px 1px #be4e48;
+    background-color: #fff;
+    color: #b5b7b7;
+    font-size: 14px;
+}
+
+.list li {
+    list-style-type: none;
+    background-color: #fff;
+}
+
+.list > li:nth-of-type(1) {
+    margin: 10px 12px;
+    background: url("../images/t7-9.png") no-repeat right;
+    cursor: pointer;
+}
+
+.list ul {
+    display: none;
+}
+
+.list ul li {
+    padding: 5px 0 5px 35px;
+    background-color: #e3e2e4;
+    cursor: pointer;
+    color: #787879;
+}
+
+.list ul li:hover {
+    color: #fff;
+    background: #be4e48 url(../images/t7-9.png) no-repeat 8px;
+}
+
+.searchBtn {
+    padding: 10px 12px;
+    background-color: #be4e48;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*活动区*/
+
+.act {
+    padding-top: 1px;
+    background-color: #f8f8f8;
+}
+
+.act > div {
+    width: 985px;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    text-align: center;
+}
+
+.act-into > div {
+    padding: 10px 8px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+
+}
+
+.act-into p:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px auto;
+}
+
+.act-into p:nth-of-type(2) {
+    font-size: 12px;
+    color: #818181;
+}
+
+.act-into p.act-tit {
+    font-size: 22px;
+    margin: 0;
+    padding: 0 15px;
+    height: 29px;
+    text-align: justify;
+}
+
+.act-into p.act-tit:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.act-into p.act-msg {
+    margin: 10px auto;
+}
+
+/*查看更多开始*/
+.new-word > div{
+    display: flex;
+}
+/*新世界第一排*/
+.time {
+    width: 852px;
+    padding-top: 1px;
+    height: 564px;
+    background: url("../images/t7-14.png") no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.time > div {
+    width: 380px;
+    margin: 130px auto 0;
+}
+
+.time p:nth-of-type(1) {
+    font-size: 49px;
+}
+
+.time p:nth-of-type(2) {
+    font-size: 158px;
+}
+
+.time p:nth-of-type(3),
+.time p:nth-of-type(4) {
+    font-size: 22px;
+}
+.time-more {
+    width: 428px;
+    background-color: #fff;
+}
+.more-box {
+    width: 288px;
+    margin: auto;
+}
+.txt {
+    overflow: hidden;
+}
+/*新世界第二排*/
+
+
+
+
+
+
+
