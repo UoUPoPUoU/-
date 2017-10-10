@@ -349,16 +349,29 @@ header {
 .time p:nth-of-type(4) {
     font-size: 22px;
 }
+/*图片右边*/
 .time-more {
     width: 428px;
     background-color: #fff;
 }
 .more-box {
     width: 288px;
+    height: 288px;
     margin: auto;
 }
 .txt {
     overflow: hidden;
+    height: 126px;
+}
+.tab-list {
+    list-style-type: none;
+}
+.dot {
+    display: flex;
+}
+.dot li{
+    color: #919192;
+    list-style-type: circle;
 }
 /*新世界第二排*/
 
