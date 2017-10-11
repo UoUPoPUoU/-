@@ -319,14 +319,15 @@ header {
 }
 
 /*查看更多开始*/
-.new-word > div{
+.new-word > div {
     display: flex;
 }
+
 /*新世界第一排*/
 .time {
     width: 852px;
     padding-top: 1px;
-    height: 564px;
+    height: 563px;
     background: url("../images/t7-14.png") no-repeat;
     color: #fff;
     text-align: center;
@@ -349,35 +350,159 @@ header {
 .time p:nth-of-type(4) {
     font-size: 22px;
 }
+
 /*图片右边*/
 .time-more {
     width: 428px;
     background-color: #fff;
+    position: relative;
 }
+
+.time-more:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-right-width: 25px;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+    border-right-color: #fff;
+    left: -47px;
+    top: 50%;
+}
+
 .more-box {
+    position: relative;
     width: 288px;
     height: 288px;
     margin: auto;
+    margin-top: -144px;
+    top: 50%;
+    text-align: center;
 }
+
+.tit {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.tit > span {
+    color: #e74f4d;
+    font-weight: bold;
+}
+
 .txt {
     overflow: hidden;
-    height: 126px;
 }
+
 .tab-list {
     list-style-type: none;
+    width: 864px;
+    height: 126px;
+    text-align: left;
 }
+
+.tab-list li {
+    width: 288px;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+    color: #919192;
+}
+
+.more-btn {
+    font-size: 12px;
+    color: #e74f4d;
+    border: 1px solid #e74f4d;
+    padding: 10px 27px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+
 .dot {
+    width: 100px;
     display: flex;
 }
-.dot li{
-    color: #919192;
-    list-style-type: circle;
+
+.dot li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    list-style-type: none;
+    border: 1px solid #919192;
+    cursor: pointer;
 }
+
+.dot-act {
+    background-color: #919192;
+}
+
 /*新世界第二排*/
 
+.more-one {
+    background-color: #e74f4d;
+    color: #fff;
+}
 
+.more-one .tit,
+.more-two .tit {
+    padding-top: 60px;
+}
 
+.more-one p,
+.more-two p {
+    font-size: 21px;
+}
 
+.more-one .more-btn,
+.more-two .more-btn {
+    padding: 10px 40px;
+    font-size: 21px;
+    margin-top: 60px;
+}
 
+.more-one .more-btn {
+    border: 1px solid #fff;
+    color: #fff;
+}
 
+.more-one.time-more:after{
+    display: none;
+}
+.more-two.time-more:after{
+    border-left-color: #fff;
+    border-right-color: transparent;
+    right: -47px;
+    left: auto;
+}
 
+.word-img {
+    width: 431px;
+}
+
+.more-one .b-sub{
+    border-bottom: 2px solid #fff;
+}
+
+.more-one .b-sub,
+.more-two .b-sub {
+    padding-bottom: 25px;
+    margin-top: 60px;
+}
+.more-two .b-sub{
+    border-bottom: 2px solid #ababaa;
+}
+/*加入*/
+.join-top>h3{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.join-top>h3>span{
+    padding-bottom: 10px;
+
+}
