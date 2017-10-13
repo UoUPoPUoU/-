@@ -358,7 +358,7 @@ header {
     position: relative;
 }
 
-.time-more:after{
+.time-more:after {
     content: "";
     display: block;
     position: absolute;
@@ -470,10 +470,11 @@ header {
     color: #fff;
 }
 
-.more-one.time-more:after{
+.more-one.time-more:after {
     display: none;
 }
-.more-two.time-more:after{
+
+.more-two.time-more:after {
     border-left-color: #fff;
     border-right-color: transparent;
     right: -47px;
@@ -484,7 +485,7 @@ header {
     width: 431px;
 }
 
-.more-one .b-sub{
+.more-one .b-sub {
     border-bottom: 2px solid #fff;
 }
 
@@ -493,16 +494,208 @@ header {
     padding-bottom: 25px;
     margin-top: 60px;
 }
-.more-two .b-sub{
+
+.more-two .b-sub {
     border-bottom: 2px solid #ababaa;
 }
+
 /*加入*/
-.join-top>h3{
+.join {
+    margin-top: 118px;
+}
+
+.join-top {
+    text-align: center;
+}
+
+.join-top > h3 {
     font-size: 21px;
     font-weight: bold;
     line-height: 30px;
+    margin-bottom: 25px;
 }
-.join-top>h3>span{
-    padding-bottom: 10px;
 
+.join-top > h3 > span {
+    border-bottom: 2px solid #e74f4d;
+    padding-bottom: 10px;
+}
+
+.join-top > p {
+    width: 580px;
+    color: #b7b7b7;
+}
+
+/*列表*/
+.t7-content {
+    width: 1005px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.join-list {
+    float: left;
+    width: 289px;
+    position: relative;
+}
+
+.join-list dl {
+    margin-bottom: 30px;
+}
+
+.join-list dt {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.join-list dd {
+    line-height: 21px;
+}
+
+.join-list dd,
+.join-list a {
+    font-size: 12px;
+    color: #b7b7b7;
+}
+
+.join-list a {
+    position: absolute;
+    right: 0;
+    line-height: 19px;
+}
+
+/*表单*/
+.t7-form {
+    width: 639px;
+    float: left;
+    margin-left: 70px;
+}
+
+.t7-form > div {
+    float: left;
+    width: 312px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.t7-form > div:nth-child(2n+1) {
+    margin-right: 15px;
+}
+
+.t7-form .text {
+    width: 100%;
+    height: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.t7-form textarea {
+
+    resize: none;
+}
+
+.t7-form button,
+.t7-form > div {
+    background-color: #edecee;
+}
+
+.t7-form input,
+.t7-form textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.t7-form button {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.t7-form button:hover {
+    background-color: #e74f4d;
+    color: #fff;
+}
+
+/*联系我们*/
+.contact {
+    padding-top: 90px;
+    padding-bottom: 73px;
+    background-color: #32353e;
+    margin-top: 165px;
+}
+
+.contact > div {
+    width: 514px;
+    margin: auto;
+}
+
+.contact .join-top > h3,
+.contact .join-top > p {
+    color: #fff;
+}
+
+.t7-form-t {
+    margin-top: 30px;
+}
+
+.t7-form-t > div {
+    display: flex;
+}
+
+.t7-email {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.t7-form-t input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.t7-form-t button {
+    width: 20%;
+    color: #d6d6d8;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #707278;
+    cursor: pointer;
+}
+.t7-form-t button:hover {
+    background-color: #e74f4d;
+    color: #fff;
+}
+.t7-icons{
+    margin-top: 35px;
+
+    text-align: center;
+}
+.t7-icons > a{
+    margin-right: 25px;
+}
+
+.t7-footer{
+    color: #fff;
+    padding: 30px 97px 15px;
+    font-size: 12px;
+    background-color: #2f2f38;
 }
