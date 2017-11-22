@@ -1,1 +1,1 @@
-https://uoupopuou.github.io/baiduSchool/html
+https://uoupopuou.github.io/baiduSchool/html/
