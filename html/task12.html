@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3的新特性</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .box {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+         th {
+            background-color: #000;
+            color: #fff;
+        }
+         tr:nth-of-type(2) {
+            color: #f00;
+        }
+        tr:nth-of-type(odd) {
+            background-color: #c7c7c7;
+        }
+        .light {
+            width: 100px;
+            height: 20px;
+            border:1px solid #c7c7c7;
+            transition: all 3s;
+            margin-top: 50px;
+        }
+        .light:hover {
+            width:200px;
+            height: 20px;
+            box-shadow: 0 0 6px 1px red;
+        }
+        .gradient {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            margin-top: 50px;
+        }
+        .ul{
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        .ul>div{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 100%;
+            /*animation: out .5s linear;*/
+        }
+        .ul>div:target{
+            transition: all 1s;
+            left: 0;
+            /*animation: in 1s linear;*/
+
+        }
+
+        @keyframes out {
+            0%{left: 0;}
+            100%{left: 100%;}
+        }
+        @keyframes in {
+            0%{left: 100%;}
+            100%{left: 0;}
+        }
+
+        .ul>div:nth-of-type(1){
+            background-color: #0000FF;
+        }
+        .ul>div:nth-of-type(2){
+            background-image: linear-gradient(to right, #ffa500,#0000FF);
+        }
+        .ul>div:nth-of-type(3){
+            background-color: #ffa500;
+        }
+        .gradient a{
+            width: 100%;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        ul {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+        }
+
+        li {
+            list-style-type: none;
+            float: right;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255,255,255,.5);
+            margin-left: 2px;
+            cursor: pointer;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <table>
+        <tr>
+            <th>排名</th>
+            <th>网站</th>
+            <th>热度</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>百度前端技术学院</td>
+            <td>13000</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>百度前端技术学院</td>
+            <td>13000</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>百度前端技术学院</td>
+            <td>13000</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>百度前端技术学院</td>
+            <td>13000</td>
+        </tr>
+    </table>
+    <div class="light"></div>
+    <div class="gradient">
+        <div class="ul">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="the"></div>
+        </div>
+        <ul>
+            <li><a href="#one">3</a></li>
+            <li><a href="#two">2</a></li>
+            <li><a href="#the">1</a></li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

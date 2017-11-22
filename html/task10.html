@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        .F {
+            display: flex;
+            background-color: paleturquoise;
+        }
+        div {
+            padding: 20px;
+        }
+        .F div {
+            width: 150px;
+            border: 1px solid red;
+
+        }
+
+        .F div:nth-of-type(1) {
+            height: 120px;
+        }
+
+        .F div:nth-of-type(2) {
+            height: 100px;
+        }
+
+        .F div:nth-of-type(3) {
+            height: 40px;
+        }
+
+        .F div:nth-of-type(4) {
+            height: 200px;
+        }
+
+        @media (min-width: 640px) {
+            .F {
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        @media (max-width: 640px) {
+            .F {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .F div:nth-of-type(4) {
+                order: -1;
+            }
+            .F div:nth-of-type(3) {
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="F">
+
+<div>ffff</div>
+<div></div>
+<div></div>
+<div>fff</div>
+
+</div>
+
+</body>
+</html>

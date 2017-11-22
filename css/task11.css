@@ -1,0 +1,165 @@
+body {
+    color: #303030;
+}
+.t11-maxW{
+    max-width: 414px;
+    margin: auto;
+}
+img {
+    vertical-align: top;
+}
+header {
+    margin-top: -1px;
+    padding: 10px 0;
+    position: relative;
+    background-color: #91d4da;
+}
+header a {
+    position: absolute;
+    font-size: 20px;
+    padding-left: 27px;
+    background: url(../images/back2.png) no-repeat;
+    background-position-y: center;
+}
+header h1 {
+    font-size: 22px;
+    text-align: center;
+}
+header a,
+header h1 {
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav a {
+    width: 20%;
+    padding: 10px;
+}
+.nav-active {
+    border-bottom: 3px solid #91d4da;
+}
+.banner {
+    width: 100%;
+}
+
+
+
+.label {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 10px;
+}
+.label img{
+    width: 50px;
+}
+.label p {
+    margin-top: 15px;
+}
+
+.columns {
+    display: flex;
+    margin: 0 15px;
+    border-top: 2px solid #dedede;
+    padding: 20px 0;
+}
+.columns div {
+    padding: 10px;
+}
+.columns img {
+    width:100%;
+}
+.columns div:nth-of-type(1),
+.columns div:nth-of-type(2) {
+    border-right: 2px solid #dedede;
+}
+.columns p {
+    margin-top: 5px;
+}
+.module {
+    padding-top: 20px;
+    background-color: #f8f8f8;
+}
+.module > div {
+    padding: 0 10px;
+    background-color: #fff;
+}
+.module h3 {
+   padding: 10px 0;
+    border-bottom: 2px solid #f8f8f8;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 120px;
+    padding: 15px 0;
+}
+.left img{
+    width: 100%;
+    border: 2px solid #ffb832;
+    margin-bottom: 10px;
+}
+.right {
+    width: 220px;
+    padding-top: 15px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.right p {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: #f8f8f8;
+}
+.news {
+    height: 450px;
+    padding-top: 20px;
+    background-color: #f8f8f8;
+}
+
+.new {
+    padding: 10px;
+    background-color: #fff;
+}
+.new img {
+    width: 115px;
+}
+.new > div {
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    margin-left: 10px;
+}
+.new span {
+    display: inline-block;
+    position: absolute;
+    color: #c7c7c7;
+    bottom: 0;
+}
+.news > div{
+
+    margin-top: 3px;
+}
+.newOne {
+    padding: 10px;
+    background-color: #fff;
+}
+.newOne > div {
+    margin-top: 10px;
+}
+
+.newOne img {
+    width: 115px;
+}
+.newOne p {
+    padding-top: 10px;
+    color: #c7c7c7;
+}
