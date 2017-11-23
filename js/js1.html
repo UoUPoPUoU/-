@@ -24,15 +24,21 @@
             margin-top: 20px;
             margin-bottom: 20px;
             overflow: hidden;
+            font-size: 0;
         }
 
         .add-list div {
             position: relative;
+            font-size: 14px;
             line-height: 50px;
             display: inline-block;
             background-color: red;
             padding: 0 20px;
             color: #fff;
+            margin-right: 5px;
+        }
+        .add-list div:last-child{
+            margin-right: 0;
         }
     </style>
 
@@ -73,6 +79,7 @@
     <button id="btn4">右侧出</button>
 </div>
 <div class="add-list">
+    <div>12</div>
     <div>12</div>
 </div>
 
@@ -187,6 +194,8 @@
             console.log(input.value);
         }
 
+
+        console.log(addList.children[0])
 
     })();
 

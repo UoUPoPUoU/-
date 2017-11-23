@@ -29,14 +29,14 @@
       <file leaf-file-name="js1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/js1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="178" column="69" lean-forward="true" selection-start-line="178" selection-start-column="69" selection-end-line="178" selection-end-column="69" />
+            <state relative-caret-position="163">
+              <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
               <folding>
                 <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#1773#2038#0" expanded="false" />
-                <element signature="e#2077#2980#0" expanded="false" />
-                <element signature="e#3019#4516#0" expanded="false" />
+                <element signature="e#1950#2215#0" expanded="false" />
+                <element signature="e#2254#3157#0" expanded="false" />
+                <element signature="e#3196#4693#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,12 +165,12 @@
       <updated>1511338984496</updated>
       <workItem from="1511338986015" duration="7675000" />
       <workItem from="1511406106642" duration="1338000" />
-      <workItem from="1511413914126" duration="16297000" />
+      <workItem from="1511413914126" duration="16695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25310000" />
+    <option name="totallyTimeSpent" value="25708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="527" y="57" width="1292" height="914" extended-state="0" />
@@ -304,14 +304,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/js1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="178" column="69" lean-forward="true" selection-start-line="178" selection-start-column="69" selection-end-line="178" selection-end-column="69" />
+        <state relative-caret-position="163">
+          <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
           <folding>
             <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#1773#2038#0" expanded="false" />
-            <element signature="e#2077#2980#0" expanded="false" />
-            <element signature="e#3019#4516#0" expanded="false" />
+            <element signature="e#1950#2215#0" expanded="false" />
+            <element signature="e#2254#3157#0" expanded="false" />
+            <element signature="e#3196#4693#0" expanded="false" />
           </folding>
         </state>
       </provider>
