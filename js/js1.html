@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>IFE JavaScript Task 01</title>
     <style>
+        /*task4*/
         .in-out {
             margin-top: 20px;
         }
@@ -20,10 +21,8 @@
 
         .add-list {
             width: 100%;
-            height: 50px;
             margin-top: 20px;
             margin-bottom: 20px;
-            overflow: hidden;
             font-size: 0;
         }
 
@@ -36,10 +35,14 @@
             padding: 0 20px;
             color: #fff;
             margin-right: 5px;
+            margin-bottom: 5px;
         }
-        .add-list div:last-child{
+
+        .add-list div:last-child {
             margin-right: 0;
         }
+
+
     </style>
 
 </head>
@@ -72,15 +75,16 @@
 <hr>
 <!--task4-->
 <div class="in-out">
-    <input type="text" id="num-int">
+    <input type="text" id="num-int" placeholder="请输入最多两位数字">
     <button id="btn1">左侧入</button>
     <button id="btn2">右侧入</button>
     <button id="btn3">左侧出</button>
     <button id="btn4">右侧出</button>
 </div>
 <div class="add-list">
-    <div>12</div>
-    <div>12</div>
+    <!--<div>1</div>-->
+    <!--<div>2</div>-->
+    <!--<div>3</div>-->
 </div>
 
 <script type="text/javascript">
@@ -189,13 +193,66 @@
             btn3 = document.getElementById("btn3"),
             btn4 = document.getElementById("btn4");
 
-        btn1.onclick=function () {
-            var div = document.createElement("div");
-            console.log(input.value);
+//            判断输入框的值是否正确
+        function insert(what) {
+            if (input.value.length > 2) {
+                alert("数量超过！");
+            } else if (input.value.length === 0) {
+                alert("不能为空！");
+            } else if (input.value.indexOf(" ") !== -1) {
+                alert("请输入数字！");
+            } else if (isNaN(input.value)) {
+                alert("这不是数字！");
+            } else {
+                var div = document.createElement("div");
+                div.innerText = input.value;
+                if (what == "left") {
+                    addList.insertBefore(div, addList.children[0]);
+                } else if (what == "right") {
+                    addList.appendChild(div);
+                }
+            }
+            remove();
         }
 
+        btn1.onclick = function () {
+            insert("left");
+        };
+        btn2.onclick = function () {
+            insert("right");
+        };
 
-        console.log(addList.children[0])
+        btn3.onclick = function () {
+            out(0);
+        };
+        btn4.onclick = function () {
+            out(addList.children.length - 1);
+        };
+
+//        判断是否有队列
+        function out(index) {
+            if (addList.children.length === 0) {
+                alert("队列为0");
+            } else {
+                var num = addList.children[index].innerText;
+                addList.removeChild(addList.children[index]);
+                alert(num);
+                remove();
+            }
+        }
+
+//        点击移除项
+        function remove() {
+            var childs = addList.getElementsByTagName("div");
+            for (var i = 0; i < childs.length; i++) {
+                childs[i].index = i;
+                childs[i].onclick = function (i) {
+                    var num = this.innerText;
+                    addList.removeChild(this);
+                    alert(num);
+                };
+            }
+        }
 
     })();
 
